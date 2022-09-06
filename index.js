@@ -162,6 +162,11 @@ if (operationsContainer) {
     customerHeaders.forEach(head => {
         if (head.key === 'operations') {
             const operations = customer[head.key];
+            if (!operations.length) {
+                let tr = createMyElement("tr", operationsContainer);
+                const td = createMyElement("td", tr, "There isn't any data yet", 'text-center alert alert-danger')
+                td.colSpan = '2';
+            }
             operations.forEach(operation => {
                 const keys = ['operationType', 'value']
                 const tr = createMyElement('tr', operationsContainer);

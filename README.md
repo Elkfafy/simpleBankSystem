@@ -1,1 +1,1 @@
-https://elkfafy.github.io/simpleBankSystem/single.html
+https://elkfafy.github.io/simpleBankSystem/

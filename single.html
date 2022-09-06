@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">All Customers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="add.html">Add Customer</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+    </nav>
+    <!--------------------------------------------------------------------->
+    <!-- Customer Location -->
+    <section class=" d-flex justify-content-center">
+        <span id='id' style="margin: 1em;"></span>
+        <span id='name' style="margin: 1em;"></span>
+    </section>
+    <section class=" d-flex justify-content-center">
+        <span style="font-weight: bold; margin-left: 0.5em; padding: 1em; color: white; background: teal; border-radius: 0.5em;">Initial Balance: <span id='initialBalance'>0</span>$</span>
+        <span style="font-weight: bold; margin-left: 0.5em; padding: 1em; color: white; background: coral;  border-radius: 0.5em;">Remaining Balance: <span id='balance'>0</span>$</span>
+    </section>
+    <section class="my-4 container">
+        <table class="table table-bordered">
+            <thead>
+                <th>Operation Type</th>
+                <th>Value</th>
+            </thead>
+            <tbody id="operationsContainer">
+                
+            </tbody>
+        </table>
+    </section>
+    <!---------------------------------------------------------------------------->
+    <!-- Ending Scripts -->
+    <script src="index.js"></script>
+    <!-------------------->
+</body>
+</html>
